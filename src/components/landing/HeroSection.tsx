@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/upsc-mentor-logo.jpeg";
+import logo from "@/assets/civara-logo.png";
 
 const HeroSection = () => {
   const scrollToWaitlist = () => {
@@ -32,11 +32,11 @@ const HeroSection = () => {
             className="mb-8"
           >
             <div className="relative">
-              <div className="absolute inset-0 scale-150 rounded-full bg-primary/20 blur-2xl" />
+              <div className="absolute inset-0 rounded-[2rem] bg-primary/20 blur-2xl" />
               <img
                 src={logo}
-                alt="UPSC Mentor Logo"
-                className="relative z-10 h-32 w-32 rounded-full border-4 border-background object-cover shadow-2xl md:h-40 md:w-40"
+                alt="Civara logo"
+                className="relative z-10 max-h-40 w-full max-w-[22rem] rounded-[2rem] border border-background/80 object-contain shadow-2xl md:max-h-48 md:max-w-[28rem]"
               />
             </div>
           </motion.div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
               <Sparkles className="h-4 w-4" />
-              AI-Powered UPSC Preparation
+              Civara for Civil Services Aspirants
             </span>
           </motion.div>
 
@@ -61,10 +61,10 @@ const HeroSection = () => {
           >
             Your Personal{" "}
             <span className="bg-gradient-to-r from-primary to-orange-400 bg-clip-text text-transparent">
-              UPSC Mentor
+              Civara
             </span>
             <br />
-            Available 24/7
+            Path to Civil Services
           </motion.h1>
 
           <motion.p
@@ -74,7 +74,7 @@ const HeroSection = () => {
             className="mb-8 max-w-2xl text-lg text-muted-foreground md:text-xl"
           >
             Transform your UPSC preparation with AI-powered mentorship, personalized study plans,
-            smart practice tools, and real-time feedback. Your dream of becoming an IAS officer starts here.
+            smart practice tools, and real-time feedback built for serious civil services aspirants.
           </motion.p>
 
           <motion.div
