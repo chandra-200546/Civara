@@ -1,4 +1,4 @@
-import fiveuLogo from "@/assets/fiveu-logo.jpeg";
+import fiveuLogo from "@/assets/fiveu-logo-new.jpeg";
 import logo from "@/assets/civara-logo.png";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-2">
             <p className="text-xs text-muted-foreground">Developed by</p>
-            <img src={fiveuLogo} alt="FiveU Vector Technologies" className="h-6 rounded object-contain" />
+            <img src={fiveuLogo} alt="FiveU Technologies Pvt Ltd" className="h-10 rounded-md object-contain" />
           </div>
 
           <p className="mt-2 text-xs text-muted-foreground">
