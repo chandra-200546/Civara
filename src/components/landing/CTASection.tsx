@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Zap } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Zap } from "lucide-react";
+import EarlyAccessForm from "@/components/landing/EarlyAccessForm";
 
 const CTASection = () => {
   return (
-    <section className="relative overflow-hidden py-24">
+    <section id="early-access" className="relative overflow-hidden py-24">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary to-orange-500" />
       <div className="absolute inset-0 opacity-10">
         <div
@@ -36,12 +36,11 @@ const CTASection = () => {
           </motion.div>
 
           <h2 className="mb-6 text-3xl font-bold text-white md:text-5xl">
-            Ready to Transform Your UPSC Preparation?
+            Get Early Access Before We Launch
           </h2>
 
           <p className="mb-8 text-lg text-white/80">
-            Join aspirants already using AI-powered mentorship to sharpen strategy, improve answers,
-            and make preparation more focused.
+            Leave your details and we&apos;ll invite you first when Civara opens access for focused UPSC aspirants.
           </p>
 
           <motion.div
@@ -49,17 +48,11 @@ const CTASection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="flex justify-center"
           >
-            <a href="/auth">
-              <Button size="lg" className="rounded-full bg-white px-8 py-6 text-lg text-primary shadow-xl hover:bg-white/90">
-                Get Started Free
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
+            <EarlyAccessForm />
           </motion.div>
 
-          <p className="mt-6 text-sm text-white/60">No credit card required - Free features available</p>
+          <p className="mt-6 text-sm text-white/60">No spam. Just launch updates, invite batches, and product news.</p>
         </motion.div>
       </div>
     </section>

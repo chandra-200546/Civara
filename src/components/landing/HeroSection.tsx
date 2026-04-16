@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/upsc-mentor-logo.jpeg";
 
 const HeroSection = () => {
+  const scrollToWaitlist = () => {
+    document.getElementById("early-access")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-br from-background via-secondary/30 to-accent/20">
       <div className="absolute inset-0 overflow-hidden">
@@ -79,12 +83,14 @@ const HeroSection = () => {
             transition={{ delay: 0.5, duration: 0.6 }}
             className="flex flex-col gap-4 sm:flex-row"
           >
-            <a href="/auth">
-              <Button size="lg" className="rounded-full px-8 py-6 text-lg shadow-lg shadow-primary/30 transition-all hover:shadow-xl hover:shadow-primary/40">
-                Start Your Journey
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </a>
+            <Button
+              size="lg"
+              onClick={scrollToWaitlist}
+              className="rounded-full px-8 py-6 text-lg shadow-lg shadow-primary/30 transition-all hover:shadow-xl hover:shadow-primary/40"
+            >
+              Join Early Access
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
             <Button
               variant="outline"
               size="lg"
@@ -102,9 +108,9 @@ const HeroSection = () => {
             className="mb-24 mt-16 grid grid-cols-3 gap-8 md:gap-16"
           >
             {[
-              { value: "12+", label: "AI Features" },
-              { value: "24/7", label: "Availability" },
-              { value: "100%", label: "Personalized" },
+              { value: "16+", label: "AI Features" },
+              { value: "24/7", label: "Mentorship" },
+              { value: "Early", label: "Access Open" },
             ].map((stat) => (
               <div key={stat.label} className="pb-4 text-center">
                 <div className="text-3xl font-bold text-primary md:text-4xl">{stat.value}</div>
